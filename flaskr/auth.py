@@ -114,6 +114,5 @@ def login():
 
 @bp.route("/logout")
 def logout():
-    """Clear the current session, including the stored user id."""
     session.clear()
     return redirect(url_for("index"))
